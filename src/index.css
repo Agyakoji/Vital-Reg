@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  border-left: 2px solid transparent;
+  top: 25%;
+  left: 0;
+  margin-left: 3%;
+}
+
+li:hover::before,
+li:focus::before {
+  border-left: 3px solid white;
+} 
+
+/* ::-webkit-scrollbar {
+  display: none;
+}
+*/
